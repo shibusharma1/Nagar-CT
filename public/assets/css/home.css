@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FFFFFF, #E8F5E9); /* Light green gradient for a clean eco-theme */
+    height:100vh;
+  }
+
+  /* Header Section */
+  .ev-header-section {
+    background: linear-gradient(90deg, #007B55, #00C853); /* Gradient green for eco-friendly theme */
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .ev-header-section h6 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .ev-header-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 85px;
+    word-spacing: 8px;
+  }
+  .ev-header-section p {
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43px;
+  }
+  .ev-welcome {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+  }
+  .ev-header-section img {
+    max-width: 150px; /* Limit logo size */
+    height: auto;
+  }
+  .ev-image-container img {
+    width: 800px;
+    max-width: 100%;
+  }
+
+  /* App Screenshots */
+  .ev-app-screenshots-title {
+    color: #007B55; /* Use a darker green to complement the header */
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .ev-app-screenshots img {
+    transition: transform 0.3s ease;
+  }
+  .ev-app-screenshots img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+
+  /* Footer Styles */
+  .ev-footer {
+    background: linear-gradient(90deg, #1A1A1A, #2B2B2B); /* Subtle gradient for depth */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+  }
+
+  .ev-footer .ev-footer-logo {
+    max-width: 100px; /* Limit logo size */
+    height: auto;
+    
+    color: linear-gradient(90deg, #007B55, #00C853); /* Gradient green for eco-friendly theme */
+    /* filter: brightness(0) invert(1); Make the logo white for contrast */
+  }
+
+  .ev-footer .ev-footer-text {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+  }
+  hr {
+    width: 19%;
+      border: 2px solid #ffffff !important;
+      color: #fff !important;
+      opacity: inherit !important;
+  }
+  .ev-footer .row {
+    align-items: center; /* Vertically center content */
+  }
+  .ev-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    .ev-header-section h1 {
+      font-size: 40px; /* Adjust heading size for mobile */
+      line-height: 50px;
+    }
+
+    .ev-header-section p {
+      font-size: 18px; /* Adjust paragraph size for mobile */
+    }
+
+    .ev-image-container img {
+      width: 100%; /* Make the image responsive */
+      height: auto;
+    }
+
+    .ev-footer .ev-footer-logo {
+      margin-bottom: 15px;
+    }
+
+    .ev-footer p {
+      font-size: 0.9rem;
+    }
+
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
