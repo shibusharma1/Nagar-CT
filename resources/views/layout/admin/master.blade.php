@@ -93,162 +93,52 @@
     .contents-side {
         margin-left: 20%;
         width: 80%;
-        display: flex;
-        flex-direction: column;
+        float: right;
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+        overflow: hidden;
+
     }
 
-    /* Header styling */
-    .header-content {
-        background: linear-gradient(90deg, #1A237E, #3F51B5);
-        /* Adjusted for professional look */
-        color: #ffffff;
-        text-align: center;
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .content-header {
+        margin: auto;
+        padding: auto;
         position: fixed;
-        width: 80%;
-        left: 20%;
-        top: 0;
+        background: linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
+        text-align: center;
+        color: #ffffff;
         z-index: 100;
+        width: 100%;
         height: 4rem;
     }
-
-    .header-content span {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .notification-account-info {
+    .item{
+        padding: 0.5rem;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        justify-content: center;
+        color: #ffffff;
+        font-size:1.3rem;
+        border-bottom: 1px solid white;
     }
-
-    .notification {
-        position: relative;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    /* Notification dropdown */
-    .notification .dropdown {
-        display: none;
-        position: absolute;
-        top: 2rem;
-        right: 0;
-        background: #ffffff;
-        color: #333;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        width: 15rem;
-        z-index: 20;
+    .item:hover{
         padding: 0.5rem;
-    }
-
-    .notification:hover .dropdown {
-        display: block;
-    }
-
-    .dropdown .notif-item {
-        padding: 0.5rem;
-        border-bottom: 1px solid #ddd;
-        font-size: 0.9rem;
-    }
-
-    .dropdown .notif-item:last-child {
-        border-bottom: none;
-    }
-
-    .account-info {
-        font-size: 1.8rem;
-        cursor: pointer;
-        position: relative;
-    }
-
-    /* User dropdown menu */
-    .account-info .user-menu {
-        display: none;
-        position: absolute;
-        top: 2rem;
-        right: 0;
-        background: #ffffff;
-        color: #333;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        width: 12rem;
-        z-index: 20;
-        padding: 0.5rem;
-    }
-
-    .account-info:hover .user-menu {
-        display: block;
-    }
-
-    .user-menu .user-header {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
-        margin-bottom: 0.5rem;
+        justify-content: center;
+        color: #333;
+        /* background: linear-gradient(90deg, #007B55, #00C853); */
+        background: #ffffff;
+        font-size:1.4rem;
+        border-right: 1px solid #333;
     }
+    .footer-content{
+        display: flex;
+        align-items:flex-end;
+        justify-content:center;
+        flex-direction: column;
 
-    .user-menu .user-header img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-
-    .user-menu .menu-item {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-        border-bottom: 1px solid #ddd;
-        cursor: pointer;
-    }
-
-    .user-menu .menu-item:hover {
-        background: #f0f0f0;
-    }
-
-    .user-menu .menu-item:last-child {
-        border-bottom: none;
-    }
-
-    /* Main content styling */
-    .main-content {
-        margin: 6rem 1rem 1rem 1rem;
-        padding: 1rem;
-        height: calc(100vh - 10rem);
-        overflow-y: auto;
-        font-size: 1rem;
-    }
-
-    /* Footer styling */
-    .footer-content {
-        background: rgba(10, 222, 84, 0.826);
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    /* Responsive adjustments */
-    @media screen and (max-width: 768px) {
-        .menu-bar {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-
-        .contents-side {
-            margin-left: 0;
-            width: 100%;
-        }
-
-        .header-content {
-            width: 100%;
-            left: 0;
-        }
     }
 </style>
 
@@ -312,34 +202,19 @@
 
     <!-- Main Content -->
     <div class="contents-side">
-        <!-- Header Section -->
-        <div class="header-content">
-            <span>Nagar-CT</span>
-            <div class="notification-account-info">
-                <!-- Bell Icon with Notification Badge -->
-                <div class="notification">
-                    <i class="fa fa-bell" aria-hidden="true"></i>
-                    <span class="badge">3</span>
-                    <div class="dropdown">
-                        <div class="notif-item">Notification 1</div>
-                        <div class="notif-item">Notification 2</div>
-                        <div class="notif-item">Notification 3</div>
-                    </div>
-                </div>
-                <!-- User Profile Icon -->
-                <div class="account-info">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    
-                    <div class="user-menu">
-                        <div class="user-header">
-                            <img src="{{ asset('assets/images/home/logo1.png') }}" alt="Nagar-CT">
-                            <span>John Doe</span>
-                        </div>
-                        <div class="menu-item">Edit Profile</div>
-                        <div class="menu-item">Change Password</div>
-                        <div class="menu-item">Logout</div>
-                    </div>
-                </div>
+        <div class="content-header">
+            Nagar-CT
+        </div>
+        <section class="content">
+            lorem500
+        </section>
+        <div class="footer-content">
+            <div>
+            2024 &copy; Copyright <strong>Nagar-CT</strong> <br />
+            </div>
+            <div>
+            Designed and Developed by <strong>Himalaya Darshan College</strong>
+
             </div>
         </div>
 
