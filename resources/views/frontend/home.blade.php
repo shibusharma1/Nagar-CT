@@ -7,11 +7,12 @@
   <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('assets/images/home/logo1.png') }}" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="{{asset('assets/css/home.css')}}" />
+
 </head>
 
-<body>
+<body style="height: 100vh !important;">
   <!-- Header Section -->
-  <header class="ev-header-section text-center text-white py-2">
+  <header class="ev-header-section text-center text-white">
     <div class="container">
       <div class="row p-0 align-items-center">
         <div class="col-lg-6 col-md-12 col-sm-12">
