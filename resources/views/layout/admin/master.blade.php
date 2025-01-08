@@ -319,14 +319,17 @@
                 <!-- Bell Icon with Notification Badge -->
                 <div class="notification">
                     <i class="fa fa-bell" aria-hidden="true"></i>
+                    
                     <sup class="badge" style="
-                    margin-left: -13px;
-                    color: red;
-                    border: 2px solid red;
+                    margin-left: -15px;
+                    color: white;
+                    border: 2px solid white;
+                    background:red;
                     border-radius: 50%;
-                    padding: 3px;
-                    font-size:0.8rem;
-                    font-weight:bolder;
+                    padding: 1px;
+                    font-size:0.95rem;
+                    font-weight:1000;
+                    z-index:100;
                 ">3</sup>
                     <div class="dropdown">
                         <div class="notif-item">Notification 1</div>
