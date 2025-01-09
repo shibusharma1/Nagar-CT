@@ -311,7 +311,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="contents-side">
+    <div class="contents-side" style="height: 100vh;">
         <!-- Header Section -->
         <div class="header-content">
             <span>Nagar-CT</span>
@@ -319,7 +319,18 @@
                 <!-- Bell Icon with Notification Badge -->
                 <div class="notification">
                     <i class="fa fa-bell" aria-hidden="true"></i>
-                    <span class="badge">3</span>
+                    
+                    <sup class="badge" style="
+                    margin-left: -15px;
+                    color: white;
+                    border: 2px solid white;
+                    background:red;
+                    border-radius: 50%;
+                    padding: 1px;
+                    font-size:0.95rem;
+                    font-weight:1000;
+                    z-index:100;
+                ">3</sup>
                     <div class="dropdown">
                         <div class="notif-item">Notification 1</div>
                         <div class="notif-item">Notification 2</div>
@@ -329,7 +340,7 @@
                 <!-- User Profile Icon -->
                 <div class="account-info">
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    
+
                     <div class="user-menu">
                         <div class="user-header">
                             <img src="{{ asset('assets/images/home/logo1.png') }}" alt="Nagar-CT">

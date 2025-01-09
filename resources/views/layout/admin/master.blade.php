@@ -99,7 +99,9 @@
 
     /* Header styling */
     .header-content {
-        background: linear-gradient(90deg, #1A237E, #3F51B5);
+        background: linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
+        /* background: linear-gradient(90deg, #1A237E, #3F51B5); */
         /* Adjusted for professional look */
         color: #ffffff;
         text-align: center;
@@ -319,7 +321,7 @@
                 <!-- Bell Icon with Notification Badge -->
                 <div class="notification">
                     <i class="fa fa-bell" aria-hidden="true"></i>
-                    
+
                     <sup class="badge" style="
                     margin-left: -15px;
                     color: white;
