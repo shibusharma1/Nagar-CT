@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nagar-CT | Admin</title>
     <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('assets/images/home/logo1.png') }}" />
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -20,10 +21,16 @@
 
     /* Sidebar menu styling */
     .menu-bar {
-        background-color: #333;
+        /* background-color: #333; */
+        background: linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
+
         width: 20%;
         height: 100vh;
         position: fixed;
+        border-right: 1px solid linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
+
     }
 
     .menu-bar .logo-img {
@@ -69,6 +76,7 @@
         left: 0;
         width: 100%;
         z-index: 10;
+
     }
 
     .sub-items .sub-item {
@@ -79,7 +87,9 @@
     }
 
     .sub-items .sub-item:hover {
-        background: #ffffff;
+        /* background: #ffffff; */
+        background: linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
         color: #333;
         /* display: block; */
     }
@@ -227,7 +237,9 @@
 
     /* Footer styling */
     .footer-content {
-        background: rgba(10, 222, 84, 0.826);
+        /* background: rgba(10, 222, 84, 0.826); */
+        background: linear-gradient(90deg, #007B55, #00C853);
+        /* Gradient green for eco-friendly theme */
         color: white;
         font-size: 1rem;
         text-align: center;
@@ -261,7 +273,7 @@
             <img src="{{ asset('assets/images/home/logo1.png') }}" alt="Nagar-CT">
         </div>
         <div class="menu-items">
-            <div class="item">
+            <div class="item active">
                 <i class="fa fa-home" aria-hidden="true"></i> &nbsp; Dashboard
             </div>
             <div class="item">
@@ -359,6 +371,8 @@
         <!-- Main Content Area -->
         <div class="main-content">
             <!-- Content goes here -->
+
+            @include('../frontend/forms/login_page')
         </div>
 
         <!-- Footer Section -->
